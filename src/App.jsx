@@ -1,13 +1,7 @@
-import "./App.css";
 import Portfolio from "./Pages/portfolio";
 
-
 function App() {
-  return (
-    <>
-    <Portfolio />
-    </>
-  );
+  return <Portfolio />;
 }
 
 export default App;
