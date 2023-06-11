@@ -2,6 +2,7 @@ import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArro
 import GitHubIcon from "@mui/icons-material/GitHub";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { Link } from "react-router-dom";
 
 export default function LeftSide() {
   return (
@@ -31,7 +32,12 @@ export default function LeftSide() {
           Software Engineer at Accenture
         </div>
 
-        <div style={{ color: "#94A3B8", paddingBottom: "15%" }}>
+        <div
+          style={{
+            color: "#94A3B8",
+            paddingBottom: "15%",
+          }}
+        >
           I build accessible, inclusive products and digital experiences for the
           web.
         </div>
@@ -82,12 +88,14 @@ export default function LeftSide() {
         <div
           style={{
             display: "flex",
-            justifyContent: "space-evenly",
             maxWidth: "250px",
+            gap: "20px",
           }}
         >
           <GitHubIcon />
+
           <TwitterIcon />
+
           <LinkedInIcon />
         </div>
       </div>
