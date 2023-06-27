@@ -1,38 +1,47 @@
+import { Grid, Typography } from "@mui/material";
+import LeftSideInfo from "./LeftSideInfo";
+import { makeStyles } from "@mui/styles";
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import { Link } from "react-router-dom";
+
+const useStyles = makeStyles((theme) => ({
+  container: {
+    position: "fixed",
+    paddingTop: "5rem",
+    [theme.breakpoints.down("md")]: {
+      position: "static",
+    },
+    [theme.breakpoints.down("sm")]: {
+      position: "static",
+      padding: "50px, 30px, 30px, 30px",
+    },
+  },
+}));
 
 export default function LeftSide() {
+  const classes = useStyles();
+
   return (
-    <div
-      style={{
-        position: "fixed",
-        display: "flex",
-        flexDirection: "column",
-        minHeight: "100vh",
-        justifyContent: "space-between",
-        margin: "0px",
-        padding: "0px",
-      }}
-    >
-      <div>
-        <div
+    <Grid container wrap="nowrap" spacing={2} className={classes.container}>
+      <Grid item xs={12} md={4}>
+        <Typography
           style={{
             fontWeight: "700",
-            fontSize: "45px",
-            paddingTop: "20%",
+
             paddingBottom: "15px",
+            fontSize: "2.7rem",
           }}
         >
           Sumeeth Regonda
-        </div>
-        <div style={{ fontWeight: "500", paddingBottom: "10px" }}>
-          Software Engineer at Accenture
-        </div>
+        </Typography>
 
-        <div
+        <Typography style={{ fontWeight: "500", paddingBottom: "10px" }}>
+          Software Engineer at Accenture
+        </Typography>
+
+        <Typography
           style={{
             color: "#94A3B8",
             paddingBottom: "15%",
@@ -40,65 +49,63 @@ export default function LeftSide() {
         >
           I build accessible, inclusive products and digital experiences for the
           web.
-        </div>
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            color: "#94A3B8",
-            paddingBottom: "5px",
-            margin: "0px",
-          }}
-        >
-          <KeyboardDoubleArrowRightIcon />
-          <h5 style={{ fontWeight: "500", margin: "0px" }}>ABOUT</h5>
-        </div>
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            color: "#94A3B8",
-            paddingBottom: "5px",
-            margin: "0px",
-          }}
-        >
-          <KeyboardDoubleArrowRightIcon />
-          <h5 style={{ fontWeight: "500", margin: "0px" }}>EXPERIENCE</h5>
-        </div>
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            color: "#94A3B8",
-          }}
-        >
-          <KeyboardDoubleArrowRightIcon />
-          <h5 style={{ fontWeight: "500", margin: "0px" }}>PROJECTS</h5>
-        </div>
+        </Typography>
 
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            color: "#94A3B8",
+            paddingBottom: "5px",
+            margin: "0",
+          }}
+        >
+          <KeyboardDoubleArrowRightIcon />
+          <h5 style={{ fontWeight: "500", margin: "0" }}>ABOUT</h5>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            color: "#94A3B8",
+            paddingBottom: "5px",
+            margin: "0",
+          }}
+        >
+          <KeyboardDoubleArrowRightIcon />
+          <h5 style={{ fontWeight: "500", margin: "0" }}>EXPERIENCE</h5>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            color: "#94A3B8",
+          }}
+        >
+          <KeyboardDoubleArrowRightIcon />
+          <h5 style={{ fontWeight: "500", margin: "0" }}>PROJECTS</h5>
+        </div>
         <div style={{ fontWeight: "500", paddingBottom: "10px" }}>
           <p>sumeeth.regonda@gmail.com</p>
         </div>
-      </div>
-      <div
-        style={{
-          paddingBottom: "30px",
-        }}
-      >
         <div
           style={{
-            display: "flex",
-            maxWidth: "250px",
-            gap: "20px",
+            paddingBottom: "30px",
           }}
         >
-          <GitHubIcon />
-
-          <TwitterIcon />
-
-          <LinkedInIcon />
+          <div
+            style={{
+              display: "flex",
+              maxWidth: "250px",
+              gap: "20px",
+            }}
+          >
+            <GitHubIcon />
+            <TwitterIcon />
+            <LinkedInIcon />
+          </div>
         </div>
-      </div>
-    </div>
+      </Grid>
+    </Grid>
   );
 }

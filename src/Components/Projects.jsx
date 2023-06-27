@@ -24,51 +24,90 @@ const largeTile = {
 
 export default function Projects() {
   return (
-    <Box sx={largeTile}>
-      <div style={{ color: "#94A3B8" }}>
-        <h4 style={{ marginTop: "0px", padding: " 2px", fontSize: "12.5px" }}>
-          2020 JUN - 2021 FEB
-        </h4>
-      </div>
-      <div>
-        <div style={{ margin: "0px", padding: "0px" }}>
-          <h3 style={{ margin: "0px" }}>oakwoodinternationalschool.com</h3>
+    <>
+      <Box sx={largeTile}>
+        <div style={{ color: "#94A3B8" }}>
+          <h4 style={{ marginTop: "0px", padding: " 2px", fontSize: "12.5px" }}>
+            2020 JUN - 2021 FEB
+          </h4>
         </div>
-        <div style={{ color: "#94A3B8", marginBottom: "10px" }}>
-          Building a school website
-        </div>
-        <div style={{ color: "#94A3B8", marginBottom: "10px" }}>
-          Built and setup the store from scratch with React Js, Tailwind for
-          Frontend using Shopify Hosting and migrated to WordPress.
-        </div>
-        <div style={{ color: "#94A3B8", marginBottom: "10px" }}>
-          Achieved page load time speed of less than 1.5 seconds on Shopify
-        </div>
-        <div style={{ color: "#94A3B8", marginBottom: "10px" }}>
-          Conversion rate was increased from 4% to 10.5%. Grew the audience
-          following from 0 to 200k followers on Pinterest in less than an year
-          by effective branding and organic marketing
-        </div>
-
         <div>
-          <ul
-            style={{
-              listStyle: "none",
-              display: "flex",
-              flexWrap: "wrap",
-              gap: "5px",
-              margin: "0px, 10px, 10px, 0px",
-              padding: "0px",
-            }}
-          >
-            <li style={miniTilesStyle}>React</li>
-            <li style={miniTilesStyle}>Javascript</li>
-            <li style={miniTilesStyle}>Redux Toolkit</li>
-            <li style={miniTilesStyle}>Material UI</li>
-            <li style={miniTilesStyle}>MySQL</li>
-          </ul>
+          <div style={{ margin: "0px", padding: "0px", marginBottom: "10px" }}>
+            <h3 style={{ margin: "0px" }}>oakwoodinternationalschool.com</h3>
+          </div>
+          <div style={{ color: "#94A3B8", marginBottom: "10px" }}>
+            Design, develop and maintain the school website.
+          </div>
+          <div style={{ color: "#94A3B8", marginBottom: "10px" }}>
+            Built out the website from scratch for a school in Hyderabad, IN
+            using Wordpress and custom theme built on top of React and Tailwind
+          </div>
+          <div style={{ color: "#94A3B8", marginBottom: "10px" }}>
+            Performed On-page and off-page SEO optimization, and link building
+            activities to improve the website's visibility on search engines.
+          </div>
+          <div style={{ color: "#94A3B8", marginBottom: "10px" }}>
+            Optimized the site for lead generation and physical visits to the
+            location.
+          </div>
+
+          <div>
+            <ul
+              style={{
+                listStyle: "none",
+                display: "flex",
+                flexWrap: "wrap",
+                gap: "5px",
+                margin: "0px, 10px, 10px, 0px",
+                padding: "0px",
+              }}
+            >
+              <li style={miniTilesStyle}>Wordpress</li>
+              <li style={miniTilesStyle}>React</li>
+              <li style={miniTilesStyle}>Tailwind</li>
+              <li style={miniTilesStyle}>MySQL</li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </Box>
+      </Box>
+
+      <Box sx={largeTile}>
+        <div style={{ color: "#94A3B8" }}>
+          <h4 style={{ marginTop: "0px", padding: " 2px", fontSize: "12.5px" }}>
+            2020 JUN - 2021 FEB
+          </h4>
+        </div>
+        <div>
+          <div style={{ margin: "0px", padding: "0px", marginBottom: "10px" }}>
+            <h3 style={{ margin: "0px" }}>saptagirihospital.com</h3>
+          </div>
+          <div style={{ color: "#94A3B8", marginBottom: "10px" }}>
+            Built out a static website for a local hospital.
+          </div>
+          <div style={{ color: "#94A3B8", marginBottom: "10px" }}>
+            Built and setup the website from scratch with HTML, CSS, Javascript
+            and Bootstrap.
+          </div>
+
+          <div>
+            <ul
+              style={{
+                listStyle: "none",
+                display: "flex",
+                flexWrap: "wrap",
+                gap: "5px",
+                margin: "0px, 10px, 10px, 0px",
+                padding: "0px",
+              }}
+            >
+              <li style={miniTilesStyle}>HTML</li>
+              <li style={miniTilesStyle}>CSS</li>
+              <li style={miniTilesStyle}>Javascript</li>
+              <li style={miniTilesStyle}>Bootstrap</li>
+            </ul>
+          </div>
+        </div>
+      </Box>
+    </>
   );
 }

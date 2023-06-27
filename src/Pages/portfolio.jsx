@@ -1,38 +1,49 @@
 import LeftSide from "../Components/LeftSide";
 import RightSide from "../Components/RightSide";
+import { makeStyles } from "@mui/styles";
+
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
+import { Grid } from "@mui/material";
 
-export default function portfolio() {
+const useStyles = makeStyles((theme) => ({
+  container: {
+    [theme.breakpoints.down("md")]: {
+      padding: "0px",
+      margin: "0px",
+    },
+    // [theme.breakpoints.down("sm")]: {
+
+    //   padding: "50px, 30px, 30px, 30px",
+    // },
+  },
+}));
+
+export default function Portfolio() {
+  const classes = useStyles();
+
   return (
-    <div
+    <Grid
+      container
+      justifyContent="center"
       style={{
         fontFamily: "roboto",
-        display: "flex",
-        justifyContent: "center",
-        background: "rgb(15,23,42)",
+        background: "rgb(15, 23, 42)",
         color: "white",
         minHeight: "100vh",
+        gap: "2em",
       }}
+      spacing={2}
+      className={classes.container}
     >
-      <div
-        style={{
-          display: "flex",
-
-          width: "1080px",
-          justifyContent: "space-between",
-          gap: "10px",
-        }}
-      >
-        <div style={{ width: "100%", height: "100%", alignContent: "center" }}>
-          <LeftSide />
-        </div>
-        <div style={{ width: "100%", height: "100%" }}>
-          <RightSide />
-        </div>
-      </div>
-    </div>
+      <Grid item xs={12} sm={6} md={4}>
+        <LeftSide />
+      </Grid>
+      <Grid item xs={12} sm={6} md={5}>
+        <RightSide />
+      </Grid>
+    </Grid>
   );
 }
