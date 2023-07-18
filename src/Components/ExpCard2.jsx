@@ -33,10 +33,16 @@ export default function ExpCard2() {
       <div>
         <div style={{ margin: "0px", padding: "0px" }}>
           <h3 style={{ margin: "0px" }}>
-            Founder Dealsstreak.com (Minillial LLC)
+            Founder · Dealsstreak.com (Minillial LLC)
           </h3>
         </div>
-        <div style={{ color: "#94A3B8", marginBottom: "10px" }}>
+        <div
+          style={{
+            color: "#94A3B8",
+            marginBottom: "10px",
+            wordBreak: "break-all",
+          }}
+        >
           Ecommerce(Dropshipping)
         </div>
         <div style={{ color: "#94A3B8", marginBottom: "10px" }}>

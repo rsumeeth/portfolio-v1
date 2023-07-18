@@ -1,12 +1,12 @@
 import React from "react";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
-
+import { Grid, Typography } from "@mui/material";
 let x = { alignItems: "center", display: "flex" };
 
 export default function About() {
   return (
-    <div style={{ paddingBottom: "100px" }}>
-      <div style={{ color: "#94A3B8", paddingTop: "20%", paddingBottom: "5%" }}>
+    <Grid pt={15} sx={{ wordBreak: "wordbreak" }}>
+      <div style={{ color: "#94A3B8", paddingBottom: "5%" }}>
         My main focus these days is building products for our clients at{" "}
         <a
           style={{ color: "white", textDecoration: "none" }}
@@ -93,6 +93,6 @@ export default function About() {
           <div>GIT</div>
         </li>
       </ul>
-    </div>
+    </Grid>
   );
 }

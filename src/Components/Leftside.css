@@ -1,0 +1,12 @@
+.active {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    
+  }
+
+  .link.active h5 {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }

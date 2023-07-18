@@ -1,5 +1,11 @@
 import React from "react";
 import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import { Grid } from "@mui/material";
+import oakwood from "../assets/oakwoodinternationalschool.jpg";
+import saptagiri from "../assets/saptagiri-hospital.jpg";
+import studioniche from "../assets/studioniche.jpg";
+import moderntrendystore from "../assets/moderntrendystore.jpg";
 
 const miniTilesStyle = {
   fontSize: "12px",
@@ -24,17 +30,49 @@ const largeTile = {
 
 export default function Projects() {
   return (
-    <>
+    <Grid container style={{ wordBreak: "break-word" }}>
+      <Box sx={{ display: { md: "none", lg: "none" } }}>
+        <h3
+          style={{
+            margin: "0px",
+            padding: "0px",
+            marginBottom: "10px",
+          }}
+        >
+          PROJECTS
+        </h3>
+      </Box>
+
       <Box sx={largeTile}>
-        <div style={{ color: "#94A3B8" }}>
-          <h4 style={{ marginTop: "0px", padding: " 2px", fontSize: "12.5px" }}>
-            2020 JUN - 2021 FEB
-          </h4>
+        <div
+          style={{
+            color: "#94A3B8",
+            marginTop: "0px",
+            padding: " 2px",
+            fontSize: "12.5px",
+          }}
+        >
+          <img
+            src={oakwood}
+            alt="oakwood international school"
+            width={120}
+            style={{
+              borderRadius: "5px",
+              border: "2px solid white",
+              marginTop: "5px",
+            }}
+          />
         </div>
         <div>
-          <div style={{ margin: "0px", padding: "0px", marginBottom: "10px" }}>
-            <h3 style={{ margin: "0px" }}>oakwoodinternationalschool.com</h3>
-          </div>
+          <h3
+            style={{
+              margin: "0px",
+              padding: "0px",
+              marginBottom: "10px",
+            }}
+          >
+            oakwoodinternationalschool.com
+          </h3>
           <div style={{ color: "#94A3B8", marginBottom: "10px" }}>
             Design, develop and maintain the school website.
           </div>
@@ -50,7 +88,6 @@ export default function Projects() {
             Optimized the site for lead generation and physical visits to the
             location.
           </div>
-
           <div>
             <ul
               style={{
@@ -72,10 +109,75 @@ export default function Projects() {
       </Box>
 
       <Box sx={largeTile}>
-        <div style={{ color: "#94A3B8" }}>
-          <h4 style={{ marginTop: "0px", padding: " 2px", fontSize: "12.5px" }}>
-            2020 JUN - 2021 FEB
-          </h4>
+        <div
+          style={{
+            color: "#94A3B8",
+            marginTop: "0px",
+            padding: " 2px",
+            fontSize: "12.5px",
+          }}
+        >
+          <img
+            src={moderntrendystore}
+            alt="oakwood international school"
+            width={120}
+            style={{
+              borderRadius: "5px",
+              border: "2px solid white",
+              marginTop: "5px",
+            }}
+          />
+        </div>
+        <div>
+          <div style={{ margin: "0px", padding: "0px", marginBottom: "10px" }}>
+            <h3 style={{ margin: "0px" }}>moderntrendystore.com</h3>
+          </div>
+          <div style={{ color: "#94A3B8", marginBottom: "10px" }}>
+            Built out a static website for a local hospital.
+          </div>
+          <div style={{ color: "#94A3B8", marginBottom: "10px" }}>
+            Built and setup the website from scratch with HTML, CSS, Javascript
+            and Bootstrap.
+          </div>
+
+          <div>
+            <ul
+              style={{
+                listStyle: "none",
+                display: "flex",
+                flexWrap: "wrap",
+                gap: "5px",
+                margin: "0px, 10px, 10px, 0px",
+                padding: "0px",
+              }}
+            >
+              <li style={miniTilesStyle}>HTML</li>
+              <li style={miniTilesStyle}>CSS</li>
+              <li style={miniTilesStyle}>Javascript</li>
+              <li style={miniTilesStyle}>Bootstrap</li>
+            </ul>
+          </div>
+        </div>
+      </Box>
+      <Box sx={largeTile}>
+        <div
+          style={{
+            color: "#94A3B8",
+            marginTop: "0px",
+            padding: " 2px",
+            fontSize: "12.5px",
+          }}
+        >
+          <img
+            src={saptagiri}
+            alt="oakwood international school"
+            width={120}
+            style={{
+              borderRadius: "5px",
+              border: "2px solid white",
+              marginTop: "5px",
+            }}
+          />
         </div>
         <div>
           <div style={{ margin: "0px", padding: "0px", marginBottom: "10px" }}>
@@ -108,6 +210,59 @@ export default function Projects() {
           </div>
         </div>
       </Box>
-    </>
+      <Box sx={largeTile}>
+        <div style={{ color: "#94A3B8" }}>
+          <div
+            style={{
+              color: "#94A3B8",
+              marginTop: "0px",
+              padding: " 2px",
+              fontSize: "12.5px",
+            }}
+          >
+            <img
+              src={studioniche}
+              alt="oakwood international school"
+              width={120}
+              style={{
+                borderRadius: "5px",
+                border: "2px solid white",
+                marginTop: "5px",
+              }}
+            />
+          </div>
+        </div>
+        <div>
+          <div style={{ margin: "0px", padding: "0px", marginBottom: "10px" }}>
+            <h3 style={{ margin: "0px" }}>studio-niche.in</h3>
+          </div>
+          <div style={{ color: "#94A3B8", marginBottom: "10px" }}>
+            Built out a static website for a local hospital.
+          </div>
+          <div style={{ color: "#94A3B8", marginBottom: "10px" }}>
+            Built and setup the website from scratch with HTML, CSS, Javascript
+            and Bootstrap.
+          </div>
+
+          <div>
+            <ul
+              style={{
+                listStyle: "none",
+                display: "flex",
+                flexWrap: "wrap",
+                gap: "5px",
+                margin: "0px, 10px, 10px, 0px",
+                padding: "0px",
+              }}
+            >
+              <li style={miniTilesStyle}>HTML</li>
+              <li style={miniTilesStyle}>CSS</li>
+              <li style={miniTilesStyle}>Javascript</li>
+              <li style={miniTilesStyle}>Bootstrap</li>
+            </ul>
+          </div>
+        </div>
+      </Box>
+    </Grid>
   );
 }

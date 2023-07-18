@@ -1,28 +1,16 @@
 import LeftSide from "../Components/LeftSide";
 import RightSide from "../Components/RightSide";
-import { makeStyles } from "@mui/styles";
-
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import { Grid } from "@mui/material";
-
-const useStyles = makeStyles((theme) => ({
-  container: {
-    [theme.breakpoints.down("md")]: {
-      padding: "0px",
-      margin: "0px",
-    },
-    // [theme.breakpoints.down("sm")]: {
-
-    //   padding: "50px, 30px, 30px, 30px",
-    // },
-  },
-}));
+import { useRef } from "react";
 
 export default function Portfolio() {
-  const classes = useStyles();
+  const aboutRef = useRef(null);
+  const experienceRef = useRef(null);
+  const projectsRef = useRef(null);
 
   return (
     <Grid
@@ -36,12 +24,30 @@ export default function Portfolio() {
         gap: "2em",
       }}
       spacing={2}
-      className={classes.container}
     >
-      <Grid item xs={12} sm={6} md={4}>
-        <LeftSide />
+      <Grid
+        item
+        md={5}
+        lg={3}
+        xl={3}
+        sx={{
+          padding: { xs: "20px" },
+          paddingTop: "0px",
+        }}
+      >
+        <LeftSide
+          aboutRef={aboutRef}
+          experienceRef={experienceRef}
+          projectsRef={projectsRef}
+        />
       </Grid>
-      <Grid item xs={12} sm={6} md={5}>
+      <Grid
+        item
+        md={5}
+        lg={3}
+        xl={4}
+        sx={{ margin: { xs: "20px", md: "10px" } }}
+      >
         <RightSide />
       </Grid>
     </Grid>
