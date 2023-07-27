@@ -44,7 +44,9 @@ export default function ExperienceCard() {
         </div>
         <div>
           <div style={{ margin: "0px", padding: "0px" }}>
-            <h3 style={{ margin: "0px" }}>Software Engineer · Accenture LLC</h3>
+            <h3 style={{ margin: "0px" }}>
+              Software Engineer · Accenture Solutions Pvt Ltd
+            </h3>
           </div>
           <div style={{ color: "#94A3B8", marginBottom: "10px" }}>
             Application Development Associate
