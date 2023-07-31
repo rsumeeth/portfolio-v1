@@ -1,4 +1,3 @@
-// RightSide.jsx
 import { Grid } from "@mui/material";
 import ExpCard2 from "./ExpCard2";
 import ExperienceCard from "./ExperienceCard";
