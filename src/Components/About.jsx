@@ -33,7 +33,7 @@ export default function About() {
         >
           Accenture
         </a>
-        . Accomplished 2+ years of professional experience in the Design,
+        . Accomplished 3 years of professional experience in the Design,
         Development & Integration of Web Applications.
       </Typography>
 
