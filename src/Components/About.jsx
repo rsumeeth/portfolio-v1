@@ -12,60 +12,66 @@ const arrowIconStyle = {
 };
 
 const technologies = [
-  "JavaScript (ES6+)",
-  "React",
-  "Express",
-  "Node.js",
+  "React.js (TypeScript)",
+  "HTML5 & CSS3",
+  "Tailwind CSS",
+  "Material-UI",
+  "Bootstrap",
+  "Node.js & Express.js",
+  "Ruby on Rails",
+  "Java (Spring Boot)",
   "MySQL",
-  "TypeScript",
-  "API Development",
-  "GIT",
+  "PostgreSQL",
+  "MongoDB",
+  "REST APIs",
+  "Git & GitHub",
+  "Jest & React Testing Library",
 ];
 
 export default function About() {
   return (
     <Grid pt={15}>
-      <Typography sx={{ color: "#94A3B8", paddingBottom: "5%" }}>
-        My main focus these days is building products for our clients at{" "}
-        <a
-          style={{ color: "white", textDecoration: "none" }}
-          href="https://accenture.com"
-        >
-          Accenture
-        </a>
-        . Accomplished 3 years of professional experience in the Design,
-        Development & Integration of Web Applications.
+
+
+      <Typography sx={{ color: "#94A3B8", paddingBottom: "1.5rem" }}>
+        Full Stack Developer with 4+ years of experience building scalable,
+        maintainable web applications. I specialize in React with TypeScript,
+        Node.js, Express, and modern backend architectures with both SQL and
+        NoSQL databases.
       </Typography>
 
-      <Typography sx={{ color: "#94A3B8", paddingBottom: "5%" }}>
-        I develop exceptional websites, web apps, and tools that provide
-        intuitive, pixel-perfect user interfaces with efficient and modern
-        backends.
+      <Typography sx={{ color: "#94A3B8", paddingBottom: "1.5rem" }}>
+        I am passionate about designing efficient architectures, writing clean
+        code, and delivering business-ready SaaS products. Currently, I work on
+        enterprise logistics platforms, driving modern frontend and backend
+        improvements that improve performance, maintainability, and user
+        experience.
       </Typography>
 
-      <Typography sx={{ color: "#94A3B8", paddingBottom: "5%" }}>
-        Currently looking out for a challenging opportunity in an organization
-        that offers a stimulating environment, personal development, and career
-        growth.
+      <Typography sx={{ color: "#94A3B8", paddingBottom: "2rem" }}>
+        I am seeking roles that blend technical depth, strong problem solving,
+        and long-term product ownership.
       </Typography>
 
-      <Typography sx={{ color: "#94A3B8" }}>
-        Here are a few technologies I've been working with recently:
+      <Typography sx={{ color: "#94A3B8", paddingBottom: "1rem" }}>
+        Here are a few technologies I have been working with recently:
       </Typography>
 
       <ul
         style={{
           color: "#94A3B8",
           display: "grid",
-          gridTemplateColumns: "repeat(2, minmax(140px, 200px))",
+          gridTemplateColumns: "repeat(2, minmax(140px, 220px))",
+          gap: "0.5rem 1rem",
           fontSize: "14px",
           listStyle: "none",
           paddingInlineStart: "0px",
+          margin: 0,
         }}
       >
         {technologies.map((tech, index) => (
           <li key={index} style={listItemStyle}>
-            <ArrowRightIcon sx={arrowIconStyle} />
+            <ArrowRightIcon sx={arrowIconStyle} fontSize="small" />
             {tech}
           </li>
         ))}
